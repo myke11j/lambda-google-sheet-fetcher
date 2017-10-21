@@ -1,0 +1,33 @@
+{
+  "name": "lambda-nodexperts.sheet-fetcher",
+  "version": "1.0.0",
+  "description": "A nodejs lambda function to fetch data from google spreadsheet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:lambda": ". ./env-variables.sh && node-lambda run",
+    "dev:lambda-deploy": "node-lambda deploy"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "aws-sdk": "^2.137.0",
+    "google-spreadsheet": "^2.0.4",
+    "winston": "^2.4.0",
+    "winston-papertrail": "^1.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myke11j/lambda-google-sheet-fetcher.git"
+  },
+  "keywords": [
+    "alexa",
+    "game-of-thrones",
+    "alexa-skill"
+  ],
+  "author": "Mukul <mukul1904@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/myke11j/lambda-google-sheet-fetcher/issues"
+  },
+  "homepage": "https://github.com/myke11j/lambda-google-sheet-fetcher#readme"
+}
