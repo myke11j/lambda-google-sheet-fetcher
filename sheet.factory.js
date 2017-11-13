@@ -53,6 +53,9 @@ SheetFactory.saveSheetData = (step) => {
                 },
                 'answer': {
                     S: row.answer
+                },
+                'cardTitle': {
+                    S: row['cardtitle']
                 }
             }
             dynamodb.putItem(param, (err, data) => {
